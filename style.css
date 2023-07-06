@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Rampart+One&family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(82, 52, 214);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    background-color: #fff;
+    width:350px;
+    padding:20px;
+    border-radius:6px;
+    box-shadow: 0 0 10px black;
+}
+form{
+    display:flex;
+    flex-direction: column;
+}
+input{
+
+    padding: 12px;
+    border: 1px solid #ccc;
+    outline:0;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+input[type="submit"]{
+    background-color: rgb(112, 58, 199);
+    color:#fff;
+    border: 1px solid rgb(112, 58, 199);
+}
+#message{
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 6px;
+    width: 350px;
+    color:black;
+    position:relative;
+    padding: 20px;
+    margin-top: 10px;
+    letter-spacing:0.5px;
+    animation: anime 0.5s ease-out;
+}
+
+@keyframes anime {
+    from{
+        transform: translateY(100px)
+    }    
+}
+h3{
+font-size : 16px;
+font-weight: 400;
+}
+#message p{
+    margin-left: 7px;
+    padding: 7px 0;
+    font-size: 15px;
+}
+.invalid{
+    color:red;
+}
+.invalid:before{
+position: relative;
+left:-7px;
+content:"✕";
+}
+
+.valid{
+    color: green;
+}
+.valid:before{
+    position: relative;
+    left:-7px;
+    content:"✔";
+    }
+    
